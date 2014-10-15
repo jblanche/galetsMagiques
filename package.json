@@ -1,7 +1,7 @@
 {
-  "name": "soundDemo",
+  "name": "corkscrew",
   "version": "1.0.0",
-  "description": "Play with browser Audio API",
+  "description": "sample project",
   "main": "main.js",
   "scripts": {
     "test": "NODE_PATH=app mocha -R spec -w",
@@ -12,7 +12,6 @@
     "html": "jade -w app/templates -o public"
   },
   "keywords": [
-    "webAudioAPI"
   ],
   "author": "Jonathan Blanchet",
   "license": "ISC"
