@@ -1,3 +1,6 @@
+public/javascripts/*.js
+public/stylesheets/*.css
+
 .DS_Store
 .AppleDouble
 .LSOverride
