@@ -5,14 +5,20 @@
   "main": "main.js",
   "scripts": {
     "test": "NODE_PATH=app mocha -R spec -w",
-    "start": "npm run js & npm run css & npm run html & npm run server & npm run test",
+    "start": "npm run js & npm run css & npm run html & npm run server",
     "server": "http-server public",
-    "js": "watchify -r ./app/javascripts/main.js:main -o public/javascripts/bundle.js -dv",
+    "js": "watchify ./app/javascripts/*.js -t 6to5ify  -o public/javascripts/bundle.js -dv",
     "css": "stylus -m --sourcemap-inline -w app/stylesheets/main.styl -o public/stylesheets/",
     "html": "jade -w app/templates -o public"
   },
-  "keywords": [
-  ],
+  "keywords": [],
   "author": "Jonathan Blanchet",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "6to5ify": "^4.0.0"
+  },
+  "dependencies": {
+    "rx": "^2.3.24",
+    "underscore": "^1.7.0"
+  }
 }

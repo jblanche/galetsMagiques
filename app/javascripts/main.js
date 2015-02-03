@@ -1,4 +1,5 @@
-console.log('Write your code here !');
+import Game from './game';
 
-var dep = require('./dependency');
-console.log(dep.msg);
+var game = new Game();
+game.start();
+

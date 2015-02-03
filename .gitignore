@@ -40,3 +40,6 @@ npm-debug.log
 
 # sftp configuration file
 sftp-config.json
+
+#node
+node_modules
