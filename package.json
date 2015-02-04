@@ -18,6 +18,7 @@
     "6to5ify": "^4.0.0"
   },
   "dependencies": {
+    "eventemitter2": "^0.4.14",
     "rx": "^2.3.24",
     "underscore": "^1.7.0"
   }
