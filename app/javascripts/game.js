@@ -5,6 +5,7 @@ import _ from 'underscore';
 import Rx from 'Rx';
 import Mediator from './mediator';
 import waveContainer from './waveContainer';
+import pebblesContainer from './pebblesContainer';
 
 export default class Game {
 	constructor() {
@@ -34,12 +35,11 @@ export default class Game {
 	}
 
 	createPebbles() {
-		var container = new PIXI.DisplayObjectContainer();
 		var positions = [{x: 200, y: 300},{x: 1000 , y: 350},{x: 600, y: 600}]
 		for(let i = 0; i < 3 ; i++){
-			container.addChild(new Pebble(positions[i], i));
+			pebblesContainer.addChild(new Pebble(positions[i], i));
 		}
-		stage.addChild(container);
+		stage.addChild(pebblesContainer);
 	}
 
 	createWaves() {
